@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebutton {
+  display: flex;
+  justify-content: center;
+  margin-left: 1000px;
+  font-size: 30px;
+}
+.main-div {
+  display: flex;
+}
+.middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  position: relative;
+}
+
+.side-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 110vh;
+}
+
+.profile-card {
+  width: 90%;
+  text-align: center;
+  background: whitesmoke;
+  color: #333;
+}
+
+.side-profile-card {
+  font-size: smaller;
+  width: 90%;
+  text-align: center;
+  background: whitesmoke;
+  color: #333;
+  height: 25vh;
+}
+
+.side-profile-card h3 {
+  color: gray;
+  line-height: 2;
+  margin-top: 120px;
+}
+
+.middle-profile-img {
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  margin-top: -160px;
+}
+.side-profile-img {
+  border-radius: 50%;
+  width: 150px;
+  margin-top: -70px;
+  box-shadow: 0 0 0 0px #ff104f;
+}
+
+.profile-card h1 {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.profile-card h3 {
+  color: gray;
+  line-height: 2;
+}
+
+.main-h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-h1::before {
+  content: "";
+  top: 117%;
+  position: absolute;
+  width: 0.8rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: orangered;
+}
+
+.main-h1:after {
+  content: "";
+  top: 120%;
+  position: absolute;
+  min-width: 12rem;
+  height: 0.1rem;
+  background: orangered;
+}
+.fa {
+  padding-top: 15px;
+  color: orangered;
+  font-size: 30px;
+}
+
+.middle-rating-img {
+  border-radius: 80%;
+  width: 50px;
+  margin-top: -149px;
+  box-shadow: 0 0 0 0px #ff104f;
+  margin-bottom: 95px;
+  margin-right: -486px;
+  z-index: 1;
+  margin-left: 465px;
+}
+
+.side-rating-img {
+  border-radius: 80%;
+  width: 50px;
+  margin-top: -132px;
+  box-shadow: 0 0 0 0px #ff104f;
+  margin-bottom: 113px;
+  margin-right: -486px;
+  z-index: 1;
+  margin-left: 114px;
+}
+
+
+
+@media (max-width: 1400px) {
+  .middle-profile-img {
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    margin-top: -130px;
+  }
+
+  .side-profile-img {
+    width: 100px;
+  }
+}
